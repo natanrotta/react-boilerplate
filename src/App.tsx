@@ -2,6 +2,8 @@
 import React from "react";
 import AppRoutes from "./routes/Routes";
 import { createGlobalStyle } from "styled-components";
+import { Header } from "./components";
+import { BrowserRouter } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -17,11 +19,18 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const App: React.FC = () => {
+  const navItems = [
+    { label: "Home", path: "/" },
+    { label: "Login", path: "/login" },
+    { label: "Private", path: "/private" },
+  ];
+
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyle />
+      <Header navItems={navItems} /> {/* Adicionando o Header aqui */}
       <AppRoutes />
-    </>
+    </BrowserRouter>
   );
 };
 
