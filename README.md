@@ -1,46 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Boilerplate Project with TypeScript, Bootstrap, and Styled-Components
 
-## Available Scripts
+This project provides a basic structure to build scalable front-end applications using React, TypeScript, Bootstrap, and Styled-Components. It follows modern design patterns and best practices to keep the code modular, reusable, and easy to maintain.
 
-In the project directory, you can run:
+![React Badge](https://img.shields.io/badge/-React-blue)
+![Typescript Badge](https://img.shields.io/badge/-Typescript-blue)
+![Yarn Badge](https://img.shields.io/badge/-Yarn-blue)
+![Bootstrap Badge](https://img.shields.io/badge/-Bootstrap-lightblue)
+![Styled Components Badge](https://img.shields.io/badge/-Styled%20Components-purple)
 
-### `yarn start`
+&nbsp;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ⚙️ How to Run
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Dependencies:** You need to have some dependencies installed before continuing:
 
-### `yarn test`
+- Node.js and NPM
+- Yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+&nbsp;
 
-### `yarn build`
+## ⏳ Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 0. Install project dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open the terminal inside the project folder and run:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+yarn install
+```
 
-### `yarn eject`
+This will install all necessary dependencies, including React, TypeScript, `styled-components`, and Bootstrap.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 1. Create a `.env` file (Optional)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you have environment-specific configurations, create a `.env` file at the root of the project and add the required configurations. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Example `.env` file:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+REACT_APP_API_URL=http://api.example.com
+```
 
-## Learn More
+### 2. Start the development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the following command to start the development server using Webpack:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn start
+```
+
+This will open the application in your default browser at `http://localhost:3000`.
+
+### 3. Build the project for production
+
+To create a production build of the application, run:
+
+```bash
+yarn build
+```
